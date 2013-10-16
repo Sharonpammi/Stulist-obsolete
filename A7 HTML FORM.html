@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Stulist - HTML Forms</title>
+        <meta name="author" content="TEAM STULIST">
+        <meta name="keywords" content="TEAM STULIST, account, registration, form">
+        <meta name="description" content="A sample html form for Stulist user account registration">
+    </head>
+
+    <body>
+        <h1>STULIST Sample Forms</h1>
+        <form id="createAccount" method="get" action="http://www.cecs.csulb.edu/~monge/sandbox/php/forms/form_processing.php">
+            <!-- 1st part of html form contains text, file, checkbox and date input type and
+            new addition to html5: placeholder, autofocus, required-->
+            <fieldset id="profile">
+                <legend>User Profile</legend>
+                <ul>
+                    <li>
+                        <label for="first-name">First Name: </label>
+                        <input type="text" autofocus name="first-name" id="first-name"
+                               placeholder="First name" required>
+                        <label for="last-name">Last Name: </label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
+                    </li>
+                    <li>
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" name="birthday" id="birthday">
+                    </li>
+                    <li>
+                        <label for="school">College/University:</label>
+                        <input type="text" name="school" id="school" placeholder="Attending college" required>
+                    </li>
+                    <li>
+                        <label for="email">School email:</label>
+                        <input type="email" name="email" id="email" placeholder=" .edu email address" required>
+                    </li>
+                    <li>
+                        <label for="photo">Upload a profile picture:</label>
+                        <input type="file" name="photo" id="photo">
+                    </li>
+                    <li id="best-contact-time">
+                        <label>Please choose the best time to contact you:</label>
+                        <ul>
+                            <li>
+                                <label for="morning">Morning (8-11am) </label>
+                                <input type="checkbox" name="morning" id="morning" value="morning">
+                            </li>
+                            <li>
+                                <label for="noon">Noon (11am-1pm)</label>
+                                <input type="checkbox" name="noon" id="noon" value="noon">
+                            </li>
+                            <li>
+                                <label for="afternoon">Afternoon (1-5pm)</label>
+                                <input type="checkbox" name="afternoon" id="afternoon" value="afternoon">
+                            </li>
+                            <li>
+                                <label for="evening">Evening (5-8pm)</label>
+                                <input type="checkbox" name="evening" id="evening" value="evening">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </fieldset>
+            <!-- 2nd part of html form contains text and password type-->
+            <fieldset id="login">
+                <legend>Login Setup</legend>
+                <ul>
+                    <li>
+                        <label for="user-id">Enter User ID:</label>
+                        <input type="text" name="user-id" id="user-id" required>
+                    </li>
+                    <li>
+                        <label for="password">Type Password:</label>
+                        <input type="password" name="password" id="password" required>
+                    </li>
+                    <li>
+                        <label for="password-confirmation">Retype Password:</label>
+                        <input type="password" name="password-confirmaiton" id="password-confirmation" required>
+                    </li>
+                </ul>
+            </fieldset>
+            <!--3nd part of html form contains radio type and select, textarea element-->
+            <fieldset id="review-and-feedback">
+                <legend>Transaction Review and Feedback</legend>
+                <fieldset id="review-radio">
+                    <legend>Rate this transaction</legend>
+                    <label for="positive">Positive</label>
+                    <input type="radio" name="review" id="positive" value="positive">
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" name="review" id="neutral" value="neutral" checked="checked">
+                    <label for="negative">Negative</label>
+                    <input type="radio" name="review" id="negative" value="negative">
+                </fieldset>
+                <fieldset id="review-Details">
+                    <legend>Rate Details</legend>
+                    <ul>
+                        <li>
+                            <label for="rate-quality">How accurate is the quality of item?</label>
+                            <select name="rate-quality" id="rate-quality">
+                                <option value="">1 to 5 star scale</option>
+                                <option value="5star">5 Star</option>
+                                <option value="4star">4 Star</option>
+                                <option value="3star">3 Star</option>
+                                <option value="2star">2 Star</option>
+                                <option value="1star">1 Star</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="rate-communication">How satisfied were you with the communication?</label>
+                            <select name="rate-communication" id="rate-communication">
+                                <option value="">1 to 5 star scale</option>
+                                <option value="5star">5 Star</option>
+                                <option value="4star">4 Star</option>
+                                <option value="3star">3 Star</option>
+                                <option value="2star">2 Star</option>
+                                <option value="1star">1 Star</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="rate-shipping">Is the shipping and delivery meet your expectation?</label>
+                            <select name="rate-shipping" id="rate-shipping">
+                                <option value="">1 to 5 star scale</option>
+                                <option value="5star">5 Star</option>
+                                <option value="4star">4 Star</option>
+                                <option value="3star">3 Star</option>
+                                <option value="2star">2 Star</option>
+                                <option value="1star">1 Star</option>
+                            </select>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset id="feedback-textarea">
+                    <legend>Feedback</legend>
+                    <label for="feedback">Please tell us more</label>
+                    <textarea name="feedback" id="feedback" cols="75" rows="4"></textarea>
+                </fieldset>
+            </fieldset>
+            <!--last part of html form contains reset and submit type of input element-->
+            <fieldset id="reset-submit">
+                <legend>Reset/Submit</legend>
+                <input type="reset" name="reset" id="reset">
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
