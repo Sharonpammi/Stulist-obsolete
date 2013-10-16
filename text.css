@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* Author: Akshay Vangari */
+
+/* body font families */
+body{
+    font-family: Lucida Sans Unicode, Verdana, Geneva, sans-serif;
+}
+
+/* h1 font families, text positioned to center, size has been increased by 230%,
+   bold styling selected, small 2pixel x 1pixel shadow created */
+h1{
+    font-family:  Impact, Lucida Sans Unicode, Verdana, Geneva, sans-serif;
+    text-align: center;
+    font-size: 230%;
+    font-weight: bold;
+    text-shadow: 2px 1px #AAB6A2;
+    margin: 30px;
+}
+
+/* h2 font families, margin of 10pixels on top, centered, bold, and small letter spacing*/
+h2{
+    margin-top: 10px;
+    font-family:  Century Gothic, Lucida Sans Unicode, Verdana, Geneva, sans-serif;
+    text-align: center;
+    font-size: 110%;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+/* paragraph is styled accordingly: line width is 700 pixels and height is 23 */
+p{
+    text-indent: 3%;
+    margin: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 700px;
+    line-height: 23px;
+    text-align: justify;
+}
+
+/* styles only anchors that have a href: makes bold and underlined*/
+a[href]{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* styles navigation element to center */
+nav{
+    text-align: center;
+}
+
+/* styles anchors inside a nav element to have spaces between them */
+nav > a{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+

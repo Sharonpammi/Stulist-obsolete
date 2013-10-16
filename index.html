@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name= "description" content = "Webpage containing project proposals for cecs 470 group project.">
+        <meta name="keywords" content= "Final Project, Proposals">
+        <meta name="author" content= "Akshay Vangari">
+        <title>Stulist Proposal</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="text.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+    </head>
+
+    <body id = "top">
+    <h1>Stulist Proposal</h1>
+
+    <nav>
+        <a href = "#description">Description</a>
+        <a href = "#accountCreation">Account Creation</a>
+        <a href = "#listingProcess">Listing Process</a>
+        <a href = "#searchingProcess">Searching Process</a>
+        <a href = "#browsingProcess">Browsing Process</a>
+        <a href = "#ratingSystem">Rating System</a>
+        <a href = "#userCommunication">User to User Communication</a>
+        <a href = "#googleMapsApi">Google Maps API</a>
+        <a href = "#itemCategories">Website Item/Service Categories</a>
+    </nav>
+
+
+    <h2><a id="description">Website Description:</a></h2>
+        <p>
+            This website is a place where college students can sell/trade various items (books, computers, clothing, etc) or
+            services(tutoring, dance lessons, music lessons, etc.) with other college students. Proof of college status is
+            required in order to make an account (.edu email). However, the search and browse feature isn’t only for users.
+            Anyone will be able to search or browse the website; however, certain information will not be displayed unless
+            logged into an account. User’s cannot directly buy items through the website, they have to collaborate with the seller
+            and decide on the final price/meeting place for the transaction. Buyers and sellers will have a medium in which they
+            can communicate with each other.
+        </p>
+
+    <h2><a id="accountCreation">Account Creation:</a></h2>
+        <ul>
+            <li>Users can create an account by providing an .edu email address, full name, university name, account username,
+                a password, and travel range. Necessary validation will be done (Ex: check if username exists, validate email, etc..)
+            </li>
+            <li>
+                Once created and confirmed, the user can list items up for sale/trade as well as search/browse for items with
+                the ability to see seller/price information. (Non account holders can’t see seller info or prices).
+            </li>
+        </ul>
+
+    <h2><a id="listingProcess">Users can list items/services for sale/trade:</a></h2>
+        <ul>
+            <li>
+                An account is necessary for this feature of the website.
+            </li>
+            <li>
+                Once logged in, the user can click on a button that will guide him or her to the listing webpage.
+            </li>
+            <li>
+                In order for the item/service to be listed, all necessary filters and specific information must be provided.
+                User’s can’t omit certain filters because they will be needed when other users search for items.
+            </li>
+            <li>
+                Use Case:
+                <ul>
+                    <li>
+                        User wants to sell a History textbook.
+                    </li>
+                    <li>
+                        After arriving to the listing webpage, he or she has to select the category in which the item belongs
+                        to (In our case: Textbooks).
+                    </li>
+                    <li>
+                        Based on the category, users will be prompted to provide additional sub-categories. (In our case,
+                        the sub category will be subjects: History)
+                    </li>
+                    <li>
+                        User category selection is completed, the user will be prompted with text boxes for various item
+                        descriptions (Title, Author, ISBN, ISBN 13)
+                    </li>
+                    <li>
+                        The user can then provide a brief description of the item, and must select the condition of the item
+                        (New, Like New, Very Good, Good, Damaged, Broken, etc.)
+                    </li>
+                    <li>
+                        Finally, the user can choose whether to list the item as sell and/or trade. If “sell” is selected,
+                        the user must input the price at which the item will be sold for. If “trade” is selected, the user
+                        can specify the price range of items that he or she is willing to trade for.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    <h2><a id="searchingProcess">Users can search for certain items/services:</a></h2>
+        <ul>
+            <li>
+                The main search bar will only execute the user’s search once a category is selected.
+                <ul>
+                    <li>
+                        The categories will be provided next to the search bar in the form of a drop down menu.
+                    </li>
+                    <li>
+                        The user has to specify one of the two major categories (items or services)
+                    </li>
+                    <li>
+                        Depending on which major category is selected, sub categories will be provided as additional filters.
+                    </li>
+                    <li>
+                        This is also where the user can specify the rating limit on items, based on the ratings.
+                        (Ex: only list items that are at or above 4 stars).
+                    </li>
+                    <li>
+                        Once a category is provided, depending on which is selected, additional text boxes/GUI properties
+                        (check boxes, radio buttons, etc…) will appear for filtering appropriate results.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Use Case:
+                <ul>
+                    <li>
+                        Let’s say a user wishes to search for textbooks. He or she will select the items category,
+                        and select Textbooks.
+                    </li>
+                    <li>
+                        Once the category is selected, another drop down menu will appear, allowing the user to specify
+                        the topic of their search (Title, Author, ISBN, ISBN 13, etc…)
+                    </li>
+                    <li>
+                        Once the search topic is selected, another drop down menu will appear, allowing the user to specify
+                        the subject of interest (Math, History, Physics, Computer Science, etc…). It’s important to note,
+                        this portion is optional. If the user wanted, he can press the search button and view results without
+                        providing additional filters.
+                    </li>
+                    <li>
+                        Once submitted, the user will be provided with a list of all items that are in relevance to his or her search.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                The search feature is not limited to users who have accounts. Anyone will be able to search items. However,
+                the price, individual item description page, and seller information  will require an account to be viewed.
+            </li>
+        </ul>
+
+    <h2><a id="browsingProcess">Users can browsed by item/service categories:</a></h2>
+        <ul>
+            <li>
+                Users can select major categories to browse by (Computers, Textbooks, Clothing, Tutoring, etc...)
+            </li>
+            <li>
+                Just like the search filter, user’s can select rating limits on items/services (Ex: Higher than 3.5 stars).
+            </li>
+            <li>
+                Users will then be presented with a list of all items within that result.
+            </li>
+            <li>
+                If needed, the user can refine these results by providing additional filters (items that range between
+                certain prices, items that are only up for trade, Tshirts *if in the Clothing category*, etc...)
+            </li>
+            <li>
+                Users can then click on any item/service and will be directed to the item/service description page.
+            </li>
+            <li>
+                The browse feature is not limited to users who have accounts. Anyone will be able to search items. However,
+                the price, individual item description page, and seller information  will require an account to be viewed.
+            </li>
+        </ul>
+
+    <h2><a id="ratingSystem">Rating System:</a></h2>
+        <ul>
+            <li>
+                Based on the quality of a transaction, both buyers and sellers can rate each other.
+            </li>
+            <li>
+                The review is based on five-star scale (higher is better).
+            </li>
+            <li>
+                Users can select a rating in increments of .5 (0.5 being the lowest and 5.0 being the highest)
+            </li>
+            <li>
+                A seller’s/buyer’s rating is calculated with the percentage of overall reviews. For example, a user has 5
+                reviews in total. The score of each review is 3, 4.5, 3, 4, 2.5. The total score is 17. The percentage is 17/25 = 68%
+            </li>
+            <li>
+                This information will be used as additional filtering options for when users search/browse for items.
+            </li>
+        </ul>
+
+    <h2><a id="userCommunication">User-to-user communication:</a></h2>
+        <ul>
+            <li>
+                Once a buyer is interested in an item or service, he or she has to first be logged into an account.
+                The buyer can then send the seller a notification with a brief message.
+            </li>
+            <li>
+                The notification will appear in the inbox of the seller.
+            </li>
+            <li>
+                If the seller wishes to sell the item to the buyer, he or she can send a message back, which will in turn
+                appear in the buyer’s inbox.
+            </li>
+            <li>
+                By default, the message will appear in the user’s account inbox. However, if the user gives permission to
+                allow email notifications, the message will also be emailed to the user’s .edu email. (However, the user has to
+                sign into the website to send a response. Replying to the email won’t be sent to the buyer/seller.)
+            </li>
+            <li>
+                The seller and buyers will discuss and make the necessary meeting arrangements/final price.
+            </li>
+            <li>
+                Once an item is sold/traded, the seller can remove his or item from being listed.
+                <ul>
+                    <li>
+                        Listed items must be given a time frame as to how long they are to stay active. After the given time,
+                        the listing will be automatically taken down regardless if the item hasn’t been sold/traded
+                    </li>
+                    <li>
+                        The maximum length of time listings may stay active is 14 days. If a seller posts a listing to stay
+                        active for 14 days, sells the item earlier, he can either close the listing himself or let our system
+                        take down the listing after 14 days has past.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    <h2><a id="googleMapsApi">Google API Integration:</a></h2>
+        <ul>
+            <li>
+                One of the services that StuList has to offer is allowing our users to define how far (in miles) they are
+                willing to travel to make a transaction occur. The proximity is based off the college a student attends.
+                (For example, a student at CSULB who wants to sell a book on StuList can list that he/or she is willing
+                to travel in a 15 mile radius from CSULB.)
+            </li>
+            <li>
+                Google Maps API gives us the tools to calculate the range of how far our users would be willing to travel
+                to sell and buy from others on StuList.
+            </li>
+            <li>
+                Google Maps API is a powerful tool as it gives our site navigational services for our users.
+            </li>
+            <li>
+                It is important to note that this API implementation is one of our lowest priorities as of this moment.
+                Once the main parts of our website is working properly, we will then try our best to research/implement this
+                feature into our website.
+            </li>
+            <li>
+                Furthermore, as Google Maps API integration is just a side project compared to the overall premise of creating
+                StuList, we can only disclose conceptual ideas and services we’d be able to provide with Google Maps API.
+            </li>
+        </ul>
+
+
+    <h2><a id="itemCategories">StuList Categories:</a></h2>
+        <p>
+            For sellers, the products required are endless. However, here in this website, we include the products that are
+            in regular list of needs for the students. The search option has two categories.  The first one is a ITEMS FOR SALE/TRADE,
+            which is again categorized into different sections,  under which we have a variety of products that are of very less
+            price to make them affordable to students. The second one is, SERVICES OFFERED which is exclusively for
+            the CSULB students where the students are offered special services ( mentioned below) which again cost much less compared
+            to outside the campus.
+        </p>
+
+        <dl>
+            <dt>
+                ITEMS FOR SALE/TRADE
+            </dt>
+                <dd>
+                    <dl>
+                        <dt>Electronics</dt>
+                            <dd>Computers/Laptops</dd>
+                            <dd>Music Players</dd>
+                            <dd>Televisions</dd>
+                            <dd>Cellphones</dd>
+                            <dd>Gaming Systems</dd>
+                    </dl>
+                </dd>
+                <dd>
+                    <dl>
+                        <dt>Automotive</dt>
+                            <dd>Cars</dd>
+                            <dd>Boats</dd>
+                            <dd>Scooters</dd>
+                            <dd>Bikes</dd>
+                            <dd>Skateboards</dd>
+                            <dd>Motorcycles</dd>
+                    </dl>
+                </dd>
+                <dd>
+                    <dl>
+                        <dt>Apparel</dt>
+                            <dd>T-shirts</dd>
+                            <dd>Dresses</dd>
+                            <dd>Pants</dd>
+                            <dd>Jewelry</dd>
+                            <dd>Watches</dd>
+                            <dd>Perfumes</dd>
+                            <dd>Bags</dd>
+                            <dd>Hair products</dd>
+                            <dd>Foorwear</dd>
+                            <dd>Wallets/Purses</dd>
+                    </dl>
+                </dd>
+                <dd>
+                    <dl>
+                        <dt>Textbooks</dt>
+                            <dd>Math</dd>
+                            <dd>History</dd>
+                            <dd>Science</dd>
+                            <dd>English</dd>
+                            <dd>Computer Science</dd>
+                            <dd>Etc...</dd>
+                    </dl>
+                </dd>
+
+            <dt>
+                SERVICES OFFERED
+            </dt>
+                <dd>
+                    <dl>
+                        <dt>Classes/Tutoring</dt>
+                            <dd>Tutoring Lessons</dd>
+                            <dd>Yoga Classes</dd>
+                            <dd>Dance Classes</dd>
+                            <dd>Creative Arts Classes</dd>
+                            <dd>Music Classes</dd>
+                    </dl>
+                </dd>
+                <dd>
+                    <dl>
+                        <dt>Repairs</dt>
+                            <dd>Electronic Repairs</dd>
+                            <dd>Automotive Repairs</dd>
+                    </dl>
+                </dd>
+        </dl>
+    <p><a href = "#top">Return to top</a></p>
+    </body>
+</html>

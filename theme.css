@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* Author: Akshay Vangari */
+
+/* body backgroud image has been set to repeat */
+body{
+    background-image:url('brownBG.png');
+    background-repeat:repeat;
+    /* Image credit: http://subtlepatterns.com/gold-scale/ */
+}
+
+/* h1 elements have dark grey color */
+h1{
+    color: #555555;
+}
+
+/* if mouse hovers over an anchor with href, colors are inverted */
+a[href]:hover{
+    background-color: #14145E;
+    color: #AAB6A2;
+}
+
+/* if an anchor with href link has been visited, color changed to light blue */
+a[href]:visited{
+    color: #7373D9;
+}
