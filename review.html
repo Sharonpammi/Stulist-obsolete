@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Stulist - Review and Feedback Forms</title>
+        <meta name="author" content="TEAM STULIST">
+        <meta name="keywords" content="TEAM STULIST, account, registration, form">
+        <meta name="description" content="A sample html form for Stulist user account registration">
+    </head>
+
+    <body>
+        <header><h1>STULIST Review Sample Form</h1></header>
+        <nav>Go to <a href="index.html"> Account Creation Form</a></nav>
+        <section>
+            <form id="review-form" method="get" action="http://www.cecs.csulb.edu/~monge/sandbox/php/forms/form_processing.php">
+                <!-- html form contains radio type and select, textarea element-->
+                <fieldset id="review-and-feedback">
+                    <legend>Transaction Review and Feedback</legend>
+                    <fieldset id="review-radio">
+                        <legend>Rate this transaction</legend>
+                        <label for="positive">Positive</label>
+                        <input type="radio" name="review" id="positive" value="positive">
+                        <label for="neutral">Neutral</label>
+                        <input type="radio" name="review" id="neutral" value="neutral" checked="checked">
+                        <label for="negative">Negative</label>
+                        <input type="radio" name="review" id="negative" value="negative">
+                    </fieldset>
+                    <fieldset id="review-Details">
+                        <legend>Rate Details</legend>
+                        <ul>
+                            <li>
+                                <label for="rate-quality">How accurate is the quality of item?</label>
+                                <select name="rate-quality" id="rate-quality">
+                                    <option value="">1 to 5 star scale</option>
+                                    <option value="5star">5 Star</option>
+                                    <option value="4star">4 Star</option>
+                                    <option value="3star">3 Star</option>
+                                    <option value="2star">2 Star</option>
+                                    <option value="1star">1 Star</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="rate-communication">How satisfied were you with the communication?</label>
+                                <select name="rate-communication" id="rate-communication">
+                                    <option value="">1 to 5 star scale</option>
+                                    <option value="5star">5 Star</option>
+                                    <option value="4star">4 Star</option>
+                                    <option value="3star">3 Star</option>
+                                    <option value="2star">2 Star</option>
+                                    <option value="1star">1 Star</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="rate-shipping">Is the shipping and delivery meet your expectation?</label>
+                                <select name="rate-shipping" id="rate-shipping">
+                                    <option value="">1 to 5 star scale</option>
+                                    <option value="5star">5 Star</option>
+                                    <option value="4star">4 Star</option>
+                                    <option value="3star">3 Star</option>
+                                    <option value="2star">2 Star</option>
+                                    <option value="1star">1 Star</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset id="feedback-textarea">
+                        <legend>Feedback</legend>
+                        <label for="feedback">Please tell us more</label>
+                        <textarea name="feedback" id="feedback" cols="75" rows="4"></textarea>
+                    </fieldset>
+                </fieldset>
+                <!--last part of html form contains reset and submit type of input element-->
+                <fieldset id="reset-submit">
+                    <legend>Reset/Submit</legend>
+                    <input type="reset" name="reset" id="reset">
+                    <input type="submit" name="submit" id="submit">
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            <p>Thank you for your feedback.</p>
+        </footer>
+    </body>
+</html>
