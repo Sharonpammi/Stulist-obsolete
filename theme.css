@@ -11,13 +11,26 @@ body{
 /* h1 elements have dark grey color */
 h1{
     color: #555555;
+    text-shadow: 2px 1px #AAB6A2;
 }
 
 input
 {
     color: #041152;
     background: #cbd7da;
-    border: 1px solid #506878
+    border: 1px solid #506878;
+}
+
+legend
+{
+    color: #041152;
+    background: #cbd7da;
+    border: 1px solid #11b5b7;
+}
+
+fieldset
+{
+    border: 3px solid #041152;
 }
 
 /* if mouse hovers over an anchor with href, colors are inverted */
@@ -29,4 +42,8 @@ a[href]:hover{
 /* if an anchor with href link has been visited, color changed to light blue */
 a[href]:visited{
     color: #7373D9;
+}
+
+fieldset[id="create-account"] p{
+    color: #c00215;
 }

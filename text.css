@@ -13,7 +13,6 @@ h1{
     font-size: 230%;
     margin: 30px;
     letter-spacing: 2px;
-    text-shadow: 2px 1px #AAB6A2;
     text-transform: uppercase;
 }
 
@@ -25,67 +24,149 @@ nav{
     letter-spacing: 1px;
 }
 
-
-input{
+/* for input and select elements */
+input, select
+{
     margin-left: 5px;
+    float: right;
+    clear: both;
+    position: relative;
+    bottom: 30px;
 }
 
+/* only select element */
+select
+{
+    bottom: 23px;
+}
+
+/* input elements with id review-radio */
+#review-radio input
+{
+    float: left;
+    bottom: 17px;
+}
+
+/* label elements with id review-radio */
+#review-radio label
+{
+    padding-left: 30px;
+}
+
+/* input elements with type, checkbox */
+input[type = "checkbox"]
+{
+    float:left;
+    clear: both;
+    bottom: 19px;
+}
+
+/* label elements */
 label
 {
     float: left;
+    clear: both;
     text-align: right;
     margin-right: 0.5em;
-    display: block
+    display: block;
+    padding-left:20px;
 }
 
+/* all inputs within profile id, except checkboxes */
+#profile input:not([type="checkbox"]), select
+{
+    margin-right: 30%;
+    min-width: 159px;
+}
+
+/* input elements within login id */
+#login input
+{
+    margin-right: 5%;
+    bottom: 20px;
+}
+
+/* unordered list */
+ul
+{
+    padding: 10px 15px;
+}
+
+/* fieldsets */
 fieldset
 {
-    border: 3px solid #041152;
-    width: 70%
+    width: 75%;
+    margin: auto;
 }
 
+/* legends */
 legend
 {
     font-family:  Century Gothic, Lucida Sans Unicode, Verdana, sans-serif;
     font-weight: bold;
-    color: #041152;
-    background: #cbd7da;
-    border: 1px solid #11b5b7;
     padding: 1px 4px;
+    margin-bottom: 15px;
 }
 
-fieldset[id="create-account"]
+/* fieldsets with create-account id, and those within review-and-feedback id */
+fieldset[id="create-account"], #review-and-feedback
 {
     border: none;
+    margin: 15px auto;
 }
 
+/* fieldsets except for one that has id, create-account*/
+fieldset:not(#create-account)
+{
+    margin: 15px auto;
+}
 
+/* fieldsets as child of fieldset with id create-account */
 fieldset[id="create-account"] > fieldset{
     margin-left: 30px;
 }
 
-
+/* paragraphs within fieldsets with id create-account */
 fieldset[id="create-account"] p{
     font-style: italic;
     font-weight: bold;
     font-size: 80%;
-    color: #c00215;
     padding-top: 5px;
     padding-bottom: 15px;
 }
 
+/* fieldset with id reset-submit */
 fieldset[id="reset-submit"]
 {
+    margin: 15px auto;
     border: none;
-    text-align: center;
     padding-top: 10px;
 }
 
+/* list elements within fieldset with id reset-submit */
+fieldset[id="reset-submit"] li
+{
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+/* legend that is child of fieldset with id reset-submit */
 fieldset[id="reset-submit"] > legend
 {
     display: none;
 }
 
+#reset{
+    float: left;
+}
+
+/* select element within fieldset with id review-Details */
+fieldset[id="review-Details"] select
+{
+    margin: auto;
+}
+
+/* footer */
 footer{
     text-align: center;
     font-size: 80%;

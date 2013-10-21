@@ -31,10 +31,12 @@
                         <p>* required fields</p>
                         <ul>
                             <li>
-                                <label for="first-name">* First Name: </label>
+                                <label for="first-name">First Name *: </label>
                                 <input type="text" autofocus name="first-name" id="first-name"
                                        placeholder="First name" required>
-                                <label for="last-name">* Last Name: </label>
+						    </li>
+                            <li>
+								<label for="last-name">Last Name *: </label>
                                 <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
                             </li>
                             <li>
@@ -42,54 +44,52 @@
                                 <input type="date" name="birthday" id="birthday">
                             </li>
                             <li>
-                                <label for="school">* College/University:</label>
+                                <label for="school">College/University *: </label>
                                 <input type="text" name="school" id="school" placeholder="Attending college" required>
                             </li>
                             <li>
-                                <label for="email">* School email:</label>
+                                <label for="email">School email *: </label>
                                 <input type="email" name="email" id="email" placeholder=" .edu email address" required>
                             </li>
                             <li>
                                 <label for="photo">Upload a profile picture:</label>
                                 <input type="file" name="photo" id="photo">
                             </li>
-                            <li id="email-preferences">
+						</ul>    
+							<ul id = "email-preferences">
                                 <label>Please select when you wish to receive email notifications:</label>
-                                <ul>
-                                    <li>
-                                        <label for="receive-message">When you get an inbox message</label>
-                                        <input type="checkbox" name="receive-message" id="receive-message" value="receive-message">
-                                    </li>
-                                    <li>
-                                        <label for="wishlist-found">When your wishlist item(s) is up for sale/trade</label>
-                                        <input type="checkbox" name="wishlist-found" id="wishlist-found" value="wishlist-found">
-                                    </li>
-                                    <li>
-                                        <label for="receive-rating">When you received a new rating</label>
-                                        <input type="checkbox" name="receive-rating" id="receive-rating" value="receive-rating">
-                                    </li>
-                                    <li>
-                                        <label for="daily-deals">Daily deals</label>
-                                        <input type="checkbox" name="daily-deals" id="daily-deals" value="daily-deals">
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+								<li>
+									<label for="receive-message">When you get an inbox message</label>
+									<input type="checkbox" name="receive-message" id="receive-message" value="receive-message">
+								</li>
+								<li>
+									<label for="wishlist-found">When your wishlist item(s) is up for sale/trade</label>
+									<input type="checkbox" name="wishlist-found" id="wishlist-found" value="wishlist-found">
+								</li>
+								<li>
+									<label for="receive-rating">When you received a new rating</label>
+									<input type="checkbox" name="receive-rating" id="receive-rating" value="receive-rating">
+								</li>
+								<li>
+									<label for="daily-deals">Daily deals</label>
+									<input type="checkbox" name="daily-deals" id="daily-deals" value="daily-deals">
+								</li>
+							</ul>
                     </fieldset>
                     <!-- 2nd part of html form contains text and password type-->
                     <fieldset id="login">
                         <legend>Login Setup</legend>
                         <ul>
                             <li>
-                                <label for="user-id">* Select a username (Minimum 6 alphanumeric characters):</label>
+                                <label for="user-id">Select a username (Minimum 6 alphanumeric characters) *:</label>
                                 <input type="text" name="user-id" id="user-id" pattern="[a-zA-Z0-9_-]{6,}" required>
                             </li>
                             <li>
-                                <label for="password">* Type Password (Minimum 6 alphanumeric characters):</label>
+                                <label for="password">Type Password (Minimum 6 alphanumeric characters) *:</label>
                                 <input type="password" name="password" id="password" pattern="[a-zA-Z0-9_-]{6,}" required>
                             </li>
                             <li>
-                                <label for="password-confirmation">* Retype Password:</label>
+                                <label for="password-confirmation">Retype Password *:</label>
                                 <input type="password" name="password-confirmaiton" id="password-confirmation" required>
                             </li>
                         </ul>
@@ -97,8 +97,14 @@
                     <!--last part of html form contains reset and submit type of input element-->
                     <fieldset id="reset-submit">
                         <legend>Reset/Submit</legend>
-                        <input type="reset" name="reset" id="reset">
-                        <input type="submit" name="submit" id="submit">
+                        <ul>
+                            <li>
+                                <input type="reset" name="reset" id="reset">
+                            </li>
+                            <li>
+                                <input type="submit" name="submit" id="submit">
+                            </li>
+                        </ul>
                     </fieldset>
                 </fieldset>
             </form>
