@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Author: Akshay Vangari */
+/* Author: Akshay Vangari, Elizabeth Sharon Rose */
 
 /* body backgroud image has been set to repeat */
 body{
@@ -11,6 +11,13 @@ body{
 /* h1 elements have dark grey color */
 h1{
     color: #555555;
+}
+
+input
+{
+    color: #041152;
+    background: #cbd7da;
+    border: 1px solid #506878;
 }
 
 /* if mouse hovers over an anchor with href, colors are inverted */
