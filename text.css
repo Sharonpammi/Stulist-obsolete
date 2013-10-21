@@ -44,6 +44,7 @@ select
 {
     float: left;
     bottom: 17px;
+    margin-left: 10px;    
 }
 
 #review-radio label
@@ -58,8 +59,9 @@ select
 
 input[type = "checkbox"]
 {
-	float:left;
+    float:left;
     clear: both;
+    margin-top: 8px;
 	bottom: 19px;
 }
 
@@ -73,15 +75,22 @@ label
     padding-left:20px;
 }
 
-#profile input:not([type="checkbox"]), select
+#profile input:not([type="checkbox"])
 {
-	margin-right: 30%;
+	margin-right: 45%;
+    margin-top: 15px;
+    min-width: 159px;
+}
+
+select
+{
+    margin-right: 5%;
     min-width: 159px;
 }
 
 #login input
 {
-	margin-right: 5%;
+	margin-right: 65%;
 	bottom: 20px;
 }
 
@@ -148,4 +157,8 @@ fieldset[id="reset-submit"] > legend
 footer{
     text-align: center;
     font-size: 80%;
+}
+textarea{
+    margin-left: 20px;
+    margin-bottom: 20px;    
 }
