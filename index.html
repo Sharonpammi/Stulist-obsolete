@@ -6,92 +6,105 @@
         <meta name="author" content="TEAM STULIST">
         <meta name="keywords" content="TEAM STULIST, account, registration, form">
         <meta name="description" content="A sample html form for Stulist user account registration">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="text.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
     </head>
 
     <body>
-        <header><h1>STULIST Account Creation Sample Forms</h1></header>
-        <nav>Go to <a href="review.html">Review and Rating form</a></nav>
+        <header>
+            <h1>STULIST Account Creation Sample Forms</h1>
+        </header>
+        
+        <nav>
+            <a href="review.html">Go to Review and Rating form</a>
+        </nav>
+        
         <section id="main form">
             <form id="createAccount" method="get" action="http://www.cecs.csulb.edu/~monge/sandbox/php/forms/form_processing.php">
                 <!-- 1st part of html form contains text, file, checkbox and date input type and
                 new addition to html5: placeholder, autofocus, required-->
-                <fieldset id="profile">
-                    <legend>User Profile</legend>
-                    <ul>
-                        <li>
-                            <label for="first-name">* First Name: </label>
-                            <input type="text" autofocus name="first-name" id="first-name"
-                                   placeholder="First name" required>
-                            <label for="last-name">* Last Name: </label>
-                            <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
-                        </li>
-                        <li>
-                            <label for="birthday">Birthday:</label>
-                            <input type="date" name="birthday" id="birthday">
-                        </li>
-                        <li>
-                            <label for="school">* College/University:</label>
-                            <input type="text" name="school" id="school" placeholder="Attending college" required>
-                        </li>
-                        <li>
-                            <label for="email">* School email:</label>
-                            <input type="email" name="email" id="email" placeholder=" .edu email address" required>
-                        </li>
-                        <li>
-                            <label for="photo">Upload a profile picture:</label>
-                            <input type="file" name="photo" id="photo">
-                        </li>
-                        <li id="best-contact-time">
-                            <label>Please choose the best time to contact you:</label>
-                            <ul>
-                                <li>
-                                    <label for="morning">Morning (8-11am) </label>
-                                    <input type="checkbox" name="morning" id="morning" value="morning">
-                                </li>
-                                <li>
-                                    <label for="noon">Noon (11am-1pm)</label>
-                                    <input type="checkbox" name="noon" id="noon" value="noon">
-                                </li>
-                                <li>
-                                    <label for="afternoon">Afternoon (1-5pm)</label>
-                                    <input type="checkbox" name="afternoon" id="afternoon" value="afternoon">
-                                </li>
-                                <li>
-                                    <label for="evening">Evening (5-8pm)</label>
-                                    <input type="checkbox" name="evening" id="evening" value="evening">
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </fieldset>
-                <!-- 2nd part of html form contains text and password type-->
-                <fieldset id="login">
-                    <legend>Login Setup</legend>
-                    <ul>
-                        <li>
-                            <label for="user-id">* Enter User ID:</label>
-                            <input type="text" name="user-id" id="user-id" required>
-                        </li>
-                        <li>
-                            <label for="password">* Type Password:</label>
-                            <input type="password" name="password" id="password" required>
-                        </li>
-                        <li>
-                            <label for="password-confirmation">* Retype Password:</label>
-                            <input type="password" name="password-confirmaiton" id="password-confirmation" required>
-                        </li>
-                    </ul>
-                </fieldset>
-                <!--last part of html form contains reset and submit type of input element-->
-                <fieldset id="reset-submit">
-                    <legend>Reset/Submit</legend>
-                    <input type="reset" name="reset" id="reset">
-                    <input type="submit" name="submit" id="submit">
+                <fieldset id="create-account">
+                    <legend>Create an Account</legend>
+                    <fieldset id="profile">
+                        <legend>User Profile</legend>
+                        <p>* required fields</p>
+                        <ul>
+                            <li>
+                                <label for="first-name">* First Name: </label>
+                                <input type="text" autofocus name="first-name" id="first-name"
+                                       placeholder="First name" required>
+                                <label for="last-name">* Last Name: </label>
+                                <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
+                            </li>
+                            <li>
+                                <label for="birthday">Birthday:</label>
+                                <input type="date" name="birthday" id="birthday">
+                            </li>
+                            <li>
+                                <label for="school">* College/University:</label>
+                                <input type="text" name="school" id="school" placeholder="Attending college" required>
+                            </li>
+                            <li>
+                                <label for="email">* School email:</label>
+                                <input type="email" name="email" id="email" placeholder=" .edu email address" required>
+                            </li>
+                            <li>
+                                <label for="photo">Upload a profile picture:</label>
+                                <input type="file" name="photo" id="photo">
+                            </li>
+                            <li id="email-preferences">
+                                <label>Please select when you wish to receive email notifications:</label>
+                                <ul>
+                                    <li>
+                                        <label for="receive-message">When you get an inbox message</label>
+                                        <input type="checkbox" name="receive-message" id="receive-message" value="receive-message">
+                                    </li>
+                                    <li>
+                                        <label for="wishlist-found">When your wishlist item(s) is up for sale/trade</label>
+                                        <input type="checkbox" name="wishlist-found" id="wishlist-found" value="wishlist-found">
+                                    </li>
+                                    <li>
+                                        <label for="receive-rating">When you received a new rating</label>
+                                        <input type="checkbox" name="receive-rating" id="receive-rating" value="receive-rating">
+                                    </li>
+                                    <li>
+                                        <label for="daily-deals">Daily deals</label>
+                                        <input type="checkbox" name="daily-deals" id="daily-deals" value="daily-deals">
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <!-- 2nd part of html form contains text and password type-->
+                    <fieldset id="login">
+                        <legend>Login Setup</legend>
+                        <ul>
+                            <li>
+                                <label for="user-id">* Select a username (Minimum 6 alphanumeric characters):</label>
+                                <input type="text" name="user-id" id="user-id" pattern="[a-zA-Z0-9_-]{6,}" required>
+                            </li>
+                            <li>
+                                <label for="password">* Type Password (Minimum 6 alphanumeric characters):</label>
+                                <input type="password" name="password" id="password" pattern="[a-zA-Z0-9_-]{6,}" required>
+                            </li>
+                            <li>
+                                <label for="password-confirmation">* Retype Password:</label>
+                                <input type="password" name="password-confirmaiton" id="password-confirmation" required>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <!--last part of html form contains reset and submit type of input element-->
+                    <fieldset id="reset-submit">
+                        <legend>Reset/Submit</legend>
+                        <input type="reset" name="reset" id="reset">
+                        <input type="submit" name="submit" id="submit">
+                    </fieldset>
                 </fieldset>
             </form>
         </section>
         <footer>
-            <p>* field is require.</p>
+            <p>&copy Stulist Inc (This is a student project)</p>
         </footer>
     </body>
 </html>
